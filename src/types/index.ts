@@ -1,4 +1,4 @@
-// ── Property (اقامتگاه) ────────────────────────────────
+// ── Property ────────────────────────────────
 export interface Property {
     id: number;
     title: string;
@@ -20,7 +20,7 @@ export interface Property {
     status: "available" | "booked";
 }
 
-// ── User (کاربر) ──────────────────────────────────────
+// ── User  ──────────────────────────────────────
 export interface User {
     id: number;
     name: string;
@@ -28,7 +28,7 @@ export interface User {
     avatar?: string;
 }
 
-// ── Review (نظر) ──────────────────────────────────────
+// ── Review  ──────────────────────────────────────
 export interface Review {
     id: number;
     userId: number;
@@ -38,7 +38,7 @@ export interface Review {
     date: string;
 }
 
-// ── Booking (رزرو) ────────────────────────────────────
+// ── Booking  ────────────────────────────────────
 export interface Booking {
     id: number;
     propertyId: number;
@@ -49,7 +49,7 @@ export interface Booking {
     status: "pending" | "confirmed" | "cancelled";
 }
 
-// ── SearchFilters (فیلترهای جستجو) ───────────────────
+// ── SearchFilters  ───────────────────
 export interface SearchFilters {
     city: string;
     type?: string;      

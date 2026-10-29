@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link , NavLink } from 'react-router-dom';
-import brandLogo from '../assets/images/logo/logo-icon.png';
+import brandLogo from '../assets/images/logo/boomja_logo_106x38_transparent.png';
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
 import { TiHome } from "react-icons/ti";
@@ -16,7 +16,6 @@ function Header() {
                     <div className="flex items-center gap-x-12">
                         <Link to="/" className='text-red-500 font-black text-2xl flex items-center gap-x-3'>
                             <img src={brandLogo} alt="Brand Logo" />
-                            جاباما
                         </Link>
                         <div className="hidden md:flex gap-8">
                             <Link to="/login" className='hover:text-red-500 transition-colors'>اجاره ویلا و اقامتگاه</Link>

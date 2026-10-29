@@ -1,4 +1,4 @@
-import hero from '../assets/images/background/hero.png'
+import hero from '../assets/images/background/header_image.jpg'
 import { properties } from '../data/properties';
 import type { SearchFilters } from '../types';
 import { CiSearch } from "react-icons/ci";
@@ -12,19 +12,17 @@ interface HeroSectionProps {
 
 function HeroSection({ filters, onFilterChange, onSearch }: HeroSectionProps) {
     return (
-        <section className="relative aspect-[1440/450] bg-no-repeat mb-12 bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }}>
+        <section className="relative aspect-360/112.5 bg-no-repeat mb-12 bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }}>
             <div className='absolute inset-0 bg-black/30 '>
                 <div className="container flex items-center justify-center h-full">
-
-                    {<div
+                    <div
                         dir="rtl"
-                        className="w-[893px] h-[121px] bg-white rounded-2xl p-6 flex items-end gap-4 shadow-[0_10px_15px_rgba(0,0,0,0.15)]"
+                        className="w-223 h-30 bg-transparent backdrop-blur-2xl rounded-2xl p-6 flex items-end gap-4 shadow-[0_10px_15px_rgba(0,0,0,0.15)]"
                     >
-                        {/* مقصد */}
-                        <div className="w-[240px] h-[73px] shrink-0 flex flex-col gap-[6px] items-start">
+                        <div className="w-60 h-18 shrink-0 flex flex-col gap-1.5 items-start">
                             <label
                                 htmlFor="city"
-                                className="h-[19px] text-xs font-semibold text-[#6B7280]"
+                                className="h-5 text-sm font-semibold text-[#f8f8f8]"
                             >
                                 مقصد
                             </label>
@@ -55,10 +53,10 @@ function HeroSection({ filters, onFilterChange, onSearch }: HeroSectionProps) {
                         </div>
 
                         {/* نوع اقامتگاه */}
-                        <div className="w-[200px] h-[73px] shrink-0 flex flex-col gap-[6px] items-start">
+                        <div className="w-50 h-18 shrink-0 flex flex-col gap-1.5 items-start">
                             <label
                                 htmlFor="type"
-                                className="h-[19px] text-xs font-semibold text-[#6B7280]"
+                                className="h-5 text-sm font-semibold text-[#f8f8f8]"
                             >
                                 نوع اقامتگاه
                             </label>
@@ -89,10 +87,10 @@ function HeroSection({ filters, onFilterChange, onSearch }: HeroSectionProps) {
                         </div>
 
                         {/* بودجه هر شب */}
-                        <div className="w-[220px] h-[73px] shrink-0 flex flex-col gap-[6px] items-start">
+                        <div className="w-55 h-18 shrink-0 flex flex-col gap-1.5 items-start">
                             <label
                                 htmlFor="price"
-                                className="h-[19px] text-xs font-semibold text-[#6B7280]"
+                                className="h-5 text-sm font-semibold text-[#f8f8f8]"
                             >
                                 بودجه هر شب
                             </label>
@@ -125,13 +123,12 @@ function HeroSection({ filters, onFilterChange, onSearch }: HeroSectionProps) {
                         {/* دکمه جستجو */}
                         <button
                             onClick={onSearch}
-                            className="w-[137px] h-12 shrink-0 bg-[#EF4444] rounded-lg px-8 flex items-center justify-center gap-2 text-white text-base font-bold hover:bg-[#DC2626] transition-colors"
+                            className="w-34 h-12 shrink-0 bg-[#EF4444] rounded-lg px-8 flex items-center justify-center gap-2 text-white text-base font-bold hover:bg-[#DC2626] transition-colors"
                         >
                             <span>جستجو</span>
                             <CiSearch className="text-xl" />
                         </button>
-                    </div>}
-
+                    </div>
                 </div>
             </div>
 
