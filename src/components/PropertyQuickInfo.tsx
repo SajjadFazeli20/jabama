@@ -42,7 +42,7 @@ function PropertyQuickInfo({ property }: PropertyQuickInfoProps) {
             </div>
 
             {/* Description */}
-            <div className="flex flex-col gap-3 text-right">
+            <div className="flex flex-col gap-3 text-right mb-3">
                 <h2 className="font-extrabold text-xl text-gray-800">درباره این اقامتگاه</h2>
                 <div className="w-full h-px bg-gray-300" />
                 <p className="text-gray-600 text-[15px] leading-8">

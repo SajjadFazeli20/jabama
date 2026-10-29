@@ -6,7 +6,6 @@ import Wishlist from '../pages/Wishlist';
 import PropertyDetails from '../pages/PropertyDetails';
 function AppRoutes() {
     return (
-        <div className='bg-gray-100 min-h-screen overflow-hidden'>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
@@ -14,7 +13,6 @@ function AppRoutes() {
                 <Route path="/wishlist" element={<Wishlist />} />
                 <Route path="/property/:id" element={<PropertyDetails />} />
             </Routes>
-        </div>
     );
 }
 

@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="bg-gray-900 text-white py-10">
+        <footer className="bg-gray-900 text-white py-10 max-w-[98%] mx-auto mb-2 rounded-2xl">
             <div className="container">
                 <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
                     <Link to="/support" className="text-center text-gray-500">پشتیبانی ۲۴ ساعته</Link>

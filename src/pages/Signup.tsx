@@ -1,5 +1,6 @@
 import { Link , useNavigate} from "react-router-dom";
 import { useState } from "react";
+import Header from "../layouts/Header";
 function Signup() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -46,6 +47,8 @@ function Signup() {
         signup();
     }
     return (
+        <>
+       <Header/>
         <div className="min-h-screen flex flex-center flex-col ">
             <div className="rounded-xl bg-white p-9 mt-20 mb-6">
                 {/* login header */}
@@ -103,6 +106,7 @@ function Signup() {
             </div>
             <span className="mb-25">هنوز حساب کاربری ندارید؟ <Link to={'/login'} className="text-red-500 underline">ثبت‌نام کنید</Link></span>
         </div>
+        </>
     );
 }
 

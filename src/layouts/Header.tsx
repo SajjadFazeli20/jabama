@@ -8,13 +8,12 @@ import { FaUserAlt } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
     return (
         <header>
             <div className="container">
-                <div className="flex items-center justify-between py-4.75">
+                <div className="flex items-center justify-between py-4.75 bg-white mt-2 px-4 rounded-2xl">
                     <div className="flex items-center gap-x-12">
-                        <Link to="/" className='text-red-500 font-black text-2xl flex items-center gap-x-3'>
+                        <Link to="/">
                             <img src={brandLogo} alt="Brand Logo" />
                         </Link>
                         <div className="hidden md:flex gap-8">

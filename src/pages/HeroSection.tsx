@@ -1,5 +1,6 @@
 import hero from '../assets/images/background/header_image.jpg'
 import { properties } from '../data/properties';
+import Header from '../layouts/Header';
 import type { SearchFilters } from '../types';
 import { CiSearch } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
@@ -12,8 +13,9 @@ interface HeroSectionProps {
 
 function HeroSection({ filters, onFilterChange, onSearch }: HeroSectionProps) {
     return (
-        <section className="relative aspect-360/112.5 bg-no-repeat mb-12 bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }}>
+        <section className="relative aspect-360/140 bg-no-repeat mb-12 bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }}>
             <div className='absolute inset-0 bg-black/30 '>
+            <Header/>
                 <div className="container flex items-center justify-center h-full">
                     <div
                         dir="rtl"
